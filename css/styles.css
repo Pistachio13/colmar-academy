@@ -31,6 +31,10 @@ nav > .main-menu > li {
     margin-left: 16px;
     font-size: 20px;
 }
+.main-menu a {
+    text-decoration: none;
+    color: black;
+}
 
 .logo-img {
     margin-left: 24px;
@@ -146,6 +150,7 @@ button {
 
 .section-3 {
     background-color: lightgray;
+    height: 62em;
 }
 
 .learnText {
@@ -154,29 +159,41 @@ button {
     padding-top: 32px;
 }
 
+.list{
+    margin: 32px 72px;
+}
+
 .start-learn {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-around;
+    justify-content: space-between;
     gap: 32px;
-    margin: 32px 72px;
+    margin-bottom: 32px;
 }
 
 .course {
     background-color: white;
-    width: 25%;
+    padding: 0;
+    width: 30%;
 }
 
-.course > h1, .course > p {
-    padding-left: 16px;
-}
-
-.course > h1 {
+.course > div {
     margin-top: 16px;
+    margin-bottom: 24px;
 }
 
-.course > p {
+.course > div > h1, .course > div > p {
+    margin-left: 16px;
+}
+
+.course > div > h1 {
+    margin-top: 16px;
+    font-size: 20px;
+}
+
+.course > div > p {
     margin-top: 8px;
+    font-size: 16px;
 }
 
 .section-4 {
@@ -192,7 +209,8 @@ button {
 .thesis-main {
     text-align: center;
     font-size: 38px;
-    padding-top: 32px;
+    margin-top: 32px;
+    margin-bottom: 32px;
 }
 
 .thesis-text1 {
@@ -200,21 +218,43 @@ button {
     margin-left: 24px;
 }
 
+.vid {
+    max-width: 100%;
+    padding: 0;
+}
+
+.des {
+    margin-top: 50px;
+    margin-bottom: 32px;
+}
+
+.des > h1 {
+    margin-top: 24px;
+    padding: 0;
+}
+
+.des > p {
+    margin-top: 8px;
+    margin-bottom: 32px;
+}
 
 .thesis-text2 {
     width: 40%;
-    padding: 32px;
+    margin-left: 24px;
+}
+
+.fisma {
+    background-color: lightgray;
 }
 
 .fisma, .now {
-    padding-top: 16px;
+    padding: 16px;
     display: flex;
     text-align: left;
     font-size: 18px;
 }
 
 .fisma > div, .now > div {
-    margin-top: 16px;
     margin-left: 20px;
     width: 65%;
 }
@@ -223,13 +263,20 @@ footer {
     height: 64px;
     display: flex;
     justify-content: space-between;
-    align-items: center;
+
 }
 
 footer p {
     margin-left: 24px;
+    margin-top: 16px;
 }
 
 footer span{
-    margin-right: 8px;
+    margin-right: 24px;
+    margin-top: 16px;
+}
+
+footer a {
+    text-decoration: none;
+    color: black;
 }
